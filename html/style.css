@@ -1,0 +1,11 @@
+select.tl_mselect.date_day {
+	width: 50px;
+}
+
+select.tl_mselect.date_month {
+	width: 60px;
+}
+
+select.tl_mselect.date_year {
+	width: 80px;
+}
