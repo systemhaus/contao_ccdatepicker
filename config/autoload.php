@@ -1,4 +1,4 @@
-<?php if (!defined('TL_ROOT')) die('You can not access this file directly!');
+<?php
 
 /**
  * ccdatepicker extension for Contao Open Source CMS
@@ -13,12 +13,9 @@
 
 
 /**
- * Backend form fields
+ * Register the classes
  */
-$GLOBALS['BE_FFL']['ccdate'] = 'CCExpireDateField';
-
-
-/**
- * Frontend form fields
- */
-$GLOBALS['TL_FFL']['ccdate'] = 'CCExpireDateField';
+ClassLoader::addClasses(array
+(
+	'CCExpireDateField' => 'system/modules/ccdatepicker/CCExpireDateField.php',
+));
